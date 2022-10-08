@@ -4,19 +4,23 @@ public class Main {
     public static void main(String[] args) {
 
         Product p = new Product();
-        p.product(4,5);
-        p.product(4,5,6);
-        p.product(7.8,3.9);
+        int ans1 = p.product(4,5);
+       int ans2 =  p.product(4,5,6);
+        double ans3 = p.product(7.8,3.9);
+        System.out.println(ans1+" "+ans2+" "+ans3);
     }
-}
-class Product{
-    public int product(int x,int y){
-        return x*y;
-    }
-    public int product(int x,int y,int z){
-        return x*y*z;
-    }
-    public double product(double x,double y){
-        return x*y;
+    public static class Product{
+        public int product(int x,int y){
+
+            return x*y;
+        }
+        public static int product(int x,int y,int z){
+
+            return x*y*z;
+        }
+        public static double product(double x,double y){
+
+            return x*y;
+        }
     }
 }
